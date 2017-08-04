@@ -22,6 +22,9 @@ screen.fill(green)
 x = (300)
 y = (300)
 
-screen.blit(train,(x,y))
 
-pygame.display.flip()
+for x in range(500):
+    x == x + 20
+    screen.blit(train,(x,y))
+    pygame.display.flip()
+    sleep(0.01)
