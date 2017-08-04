@@ -19,14 +19,9 @@ pygame.display.set_caption('TRAIN WRECK')
 
 screen.fill(green)
 
-
-def train(x, y):
-    screen.blit(train, (x, y))
-
 x = (300)
 y = (300)
 
-train()
-
+screen.blit(train,(x,y))
 
 pygame.display.flip()
