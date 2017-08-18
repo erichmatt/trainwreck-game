@@ -2,6 +2,8 @@ import pygame
 from time import sleep
 from pygame.locals import *
 import sys
+usrin = raw_input("Press Key: ")
+
 
 pygame.init()
 
@@ -23,8 +25,10 @@ x = (300)
 y = (300)
 
 
-for x in range(500):
-    x == x + 20
-    screen.blit(train,(x,y))
-    pygame.display.flip()
-    sleep(0.01)
+if usrin == "w":
+
+    for x in range(500):
+        x == x + 20
+        screen.blit(train,(x,y))
+        pygame.display.flip()
+        sleep(0.01)
