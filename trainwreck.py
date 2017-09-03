@@ -2,7 +2,6 @@ import pygame
 from time import sleep
 from pygame.locals import *
 import sys
-usrin = raw_input("Press Key: ")
 
 
 pygame.init()
@@ -25,10 +24,18 @@ x = (300)
 y = (300)
 
 
-if usrin == "w":
-
+def trainmove():
     for x in range(500):
         x == x + 20
+        screen.fill(green)
         screen.blit(train,(x,y))
         pygame.display.flip()
         sleep(0.01)
+
+
+
+while True:
+    for event in pygame.event.get():
+        if event.type == pygame.KEYDOWN:
+            if event.key == pygame.K_LEFT:
+                trainmove()
