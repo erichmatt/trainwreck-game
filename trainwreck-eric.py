@@ -39,8 +39,9 @@ class Train(object):
 train = Train()
 train2 = Train()
 train2.draw(screen)
-train.position = (300,300)
+print train.position
+train.position = (train.position[0]+10,train.position[1])
 train.draw(screen)
-
+print train.position
 pygame.display.flip()
 pygame.display.update()
