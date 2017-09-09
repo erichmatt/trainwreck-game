@@ -27,17 +27,19 @@ x = (300)
 y = (300)
 class Train(object):
     def __init__(self):
-        self.position = (00,00)
+        self.position = (0,0)
         self.randomize()
     def randomize(self):
         self.position = (random.randint(0,300),random.randint(0,300))
+    def position(self,x,y):
+        self.postion = (x,y)
     def draw(self, surf):
         draw_train(surf,self.position)
 
 train = Train()
 train2 = Train()
-train2.randomize()
 train2.draw(screen)
+train.position = (300,300)
 train.draw(screen)
 
 pygame.display.flip()
